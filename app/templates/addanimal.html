@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="min-height:100% width:70%">
+        <h1>Employee Dashboard</h1>
+        <p>Here you can find all the database transaction options available only to employees.</p>
+        <ul>
+            <li><a href="/dashboard/addanimal">Add animal</a></li>
+            <li><a href="/dashboard/addworker">Add worker</a></li>
+            <li><a href="/dashboard/viewapps">See all applications</a></li>
+            <li><a href="/logout">Log out</a></li>                
+        </ul>
+<h1>Add Animal</h1>
+<br>
+<form action="" class="form-inline" method="post">
+{{ form.hidden_tag() }}
+<p>
+        {{ form.aType.label }}<br>
+        {{ form.aType(size=2) }}
+
+</p>
+<p>
+        {{ form.animalName.label }}<br>
+        {{ form.animalName(size=32) }}
+</p>
+<p>
+        {{ form.adob.label }}<br>
+        {{ form.adob(size=32) }}
+</p>
+<p>
+        {{ form.asize.label }}<br>
+        {{ form.asize(size=2) }}
+
+</p>
+<p>
+        {{ form.breed.label }}<br>
+        {{ form.breed(size=32) }}
+</p>
+<p>
+        {{ form.availID.label }}<br>
+        {{ form.availID(size=32) }}
+</p>
+<p>
+        {{ form.behaviorID.label }}<br>
+        {{ form.behaviorID(size=32) }}
+</p>
+<p>
+        {{ form.poundID.label }}<br>
+        {{ form.poundID(size=32) }}
+</p>
+<p>
+        {{ form.dateIn.label }}<br>
+        {{ form.dateIn(size=32) }}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+</div>
+{% endblock %}

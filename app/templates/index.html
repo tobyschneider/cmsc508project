@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="min-height:100% width:70%">
+<h1>Welcome to the VCU Animal Shelter!</h1>
+<h2>Animals up for Adoption</h2>
+<p>Here are all the animals currently up for adoption:</p>
+<table border="1" cellpadding="20" cellspacing="20">
+        <tr>
+            <td>Animal ID</td>
+            <td>Animal Type</td>
+            <td>Name</td>
+            <td>Year Born</td>
+            <td>Size</td>
+            <td>Breed</td>
+            <td>Date In</td>
+        </tr>
+ 
+    {% for animal in animals %}
+        <tr>
+            <td>{{animal[0]}}</td>
+            <td>{{animal[1]}}</td>
+            <td>{{animal[2]}}</td>
+            <td>{{animal[3]}}</td>
+            <td>{{animal[4]}}</td>
+            <td>{{animal[5]}}</td>
+            <td>{{animal[9]}}</td>
+        </tr>
+    {% endfor %}
+</table>
+</div>
+{% endblock %}

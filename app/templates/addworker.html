@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="min-height:100% width:70%">
+        <h1>Employee Dashboard</h1>
+        <p>Here you can find all the database transaction options available only to employees.</p>
+        <ul>
+            <li><a href="/dashboard/addanimal">Add animal</a></li>
+            <li><a href="/dashboard/addworker">Add worker</a></li>
+            <li><a href="/dashboard/viewapps">See all applications</a></li>
+            <li><a href="/logout">Log out</a></li>                
+        </ul>
+<h1>Add Worker</h1>
+<br>
+<form action="" class="form-inline" method="post">
+{{ form.hidden_tag() }}
+<p>
+    {{ form.eType.label }}<br>
+    {{ form.eType(size=2)}}
+</p>
+<p>
+    {{ form.name.label }}<br>
+    {{ form.name(size=32) }}
+</p>
+<p>
+    {{ form.address.label }}<br>
+    {{ form.address(size=32) }}
+</p>
+<p>
+    {{ form.zip.label }}<br>
+    {{ form.zip(size=32) }}
+</p>
+<p>
+    {{ form.dob.label }}<br>
+    {{ form.dob(size=32) }}
+</p>
+<p>
+    {{ form.email.label }}<br>
+    {{ form.email(size=32) }}
+</p>
+<p>
+    {{ form.username.label }}<br>
+    {{ form.username(size=32) }}
+</p>
+<p>
+    {{ form.password.label }}<br>
+    {{ form.password(size=32 )}}
+</p>
+<p>
+    {{ form.confirm.label }}<br>
+    {{ form.confirm(size=32) }}
+</p>
+<p>{{ form.submit() }}</p>
+</form>
+</div>
+{% endblock %}

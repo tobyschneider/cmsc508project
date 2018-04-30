@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="min-height:100% width:70%">
+<h1>Employee Login</h1>
+<br>
+    <form action="" class="form-inline" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.username.label }}<br>
+        {{ form.username(size=32) }}
+    </p>
+    <p>
+        {{ form.password.label }}<br>
+        {{ form.password(size=32 )}}
+    </p>
+    <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
+    <p>{{ form.submit() }}</p>
+    </form>
+</div>
+{% endblock %}

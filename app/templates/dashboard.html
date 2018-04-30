@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="min-height:100% width:70%">
+<h1>Employee Dashboard</h1>
+<p>Here you can find all the database transaction options <u>available only to employees</u>.</p>
+<ul>
+    <li><a href="/dashboard/addanimal">Add animal</a></li>
+    <li><a href="/dashboard/addworker">Add worker</a></li>
+    <li><a href="/dashboard/viewapps">See all applications</a></li>
+    <li><a href="/logout">Log out</a></li>
+
+</ul>
+</div>
+{% endblock %}
