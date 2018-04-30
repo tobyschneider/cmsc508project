@@ -4,7 +4,7 @@
 - [x] Employee login
 - [x] Set up dashboard navigation
 - [x] Add animals
-- [ ] Create workers 
+- [x] Create workers 
 - [ ] Update background checks
 
 ## Installing dependencies 
@@ -19,10 +19,6 @@
 - sudo pip install flask-wtf (Web form handler)
 
 - sudo pip install passlib (password encryption)
-
-# clone if necessary
-
-- sudo git clone https://github.com/pjfuller/CMSC508Project/
 
 ## How to setup MySQL database
 - Make sure mysqldb or mariadb is installed and running
@@ -44,4 +40,4 @@
 - export FLASK_APP=project.py          //sets environment variable
 
 - flask run
-  - Will run on http://127.0.0.1:5000/  
+  - Will run on http://127.0.0.1:5000/  (or wherever you configured it to run)
